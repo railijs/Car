@@ -12,4 +12,6 @@ class Tire {
     public function __destruct() {
                    echo $this->type . " boom!" . "<br>";
                }
+
+
 }
