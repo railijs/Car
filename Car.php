@@ -1,18 +1,15 @@
 <?php
+include_once "Vehicle.php";
 
-class Car {
-    public $brand;
-    private $mileage;
+class Car extends Vehicle{
+    
     static $describe = "ripo normali.";
 
     public function __construct($b, $m) {
          $this->brand = $b;
-         $this->milage = $m;
+         $this->mileage = $m;
     } 
 
-    public function drive() {
-        echo " fly " . $this->brand;
-    }
 
     static function makeNoise() {
         echo "Beep, Beep, GANG";
